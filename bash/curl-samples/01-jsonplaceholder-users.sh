@@ -40,7 +40,19 @@ users_length=$( echo $all_users | jq ' . | length' )
 echo "Number of items is $users_length"
 
 
-### Get status code
+### Get status code from all users
 echo ""
 http_code=$(curl --write-out "%{http_code}\n" --output /dev/null --silent  https://jsonplaceholder.typicode.com/users)
+echo $http_code 
+
+
+### Get status code from user with id 5
+echo ""
+http_code=$(curl --write-out "%{http_code}\n" --output /dev/null --silent  https://jsonplaceholder.typicode.com/users/5)
+echo $http_code 
+
+
+### Get status code from user with id 500
+echo ""
+http_code=$(curl --write-out "%{http_code}\n" --output /dev/null --silent  https://jsonplaceholder.typicode.com/users/500)
 echo $http_code 
