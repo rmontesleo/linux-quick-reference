@@ -33,7 +33,7 @@ id_rsa
 id_rsa.pub
 ```
 
-### Copy the value of the public key, this value you will use it on the server
+### Copy the value of the public key, this value you will use it on the server (client)
 ```bash
 cat /home/<USER_NAME>/.ssh/id_rsa.pub
 ```
@@ -47,14 +47,19 @@ cat /home/<USER_NAME>/.ssh/id_rsa.pub
 ssh <YOUR_REMOTE_USER_NAME>@<REMOTE_IP_OR_HOSTNAME>
 ```
 
+### if not exists , create the directory  ~/.ssh
+```bash
+mkdir ~/.ssh
+```
+
 ### create the file for authorized key and past the content of your public key
 ```bash
-vim ~/.ssh/authorized_key
+vim ~/.ssh/authorized_keys
 ```
 
 ### if you want to add another key you can
 ```bash
-echo <NEW_PUBLIC_KEY_CONTENT> >> ~/.ssh/authorized_key
+echo <NEW_PUBLIC_KEY_CONTENT> >> ~/.ssh/authorized_keys
 ```
 
 ### Restart the sshd service
@@ -65,7 +70,7 @@ sudo systemctl restart sshd
 ### Optional step, disable the login with password
 ```bash
 # edith the file
-sudo vim /tec/ssh/sshd_config
+sudo vim /etc/ssh/sshd_config
 
 # find the propertyPasswordAuthentication yes  , and change by PasswordAuthentication no
 ```
@@ -80,7 +85,7 @@ sudo vim /tec/ssh/sshd_config
 eval `ssh-agent -s`
 ```
 
-### Step 2: add the key to the agent
+### Step 2: add the private key to the agent
 ```bash
 ssh-add ~/.ssh/<YOUR_PRIVATE_KEY_TO_USE>
 ```
