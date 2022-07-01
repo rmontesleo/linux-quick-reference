@@ -94,3 +94,9 @@ ssh-add ~/.ssh/<YOUR_PRIVATE_KEY_TO_USE>
 ```bash
 ssh <YOUR_REMOTE_USER_NAME>@<REMOTE_IP_OR_HOSTNAME>
 ```
+
+
+
+## References
+
+- [Traversy Media : Linux Server Setup & MERN Deployment](https://www.youtube.com/watch?v=7aRjGIhwyQM)
