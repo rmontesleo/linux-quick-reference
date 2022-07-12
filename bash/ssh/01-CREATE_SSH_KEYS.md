@@ -100,3 +100,5 @@ ssh <YOUR_REMOTE_USER_NAME>@<REMOTE_IP_OR_HOSTNAME>
 ## References
 
 - [Traversy Media : Linux Server Setup & MERN Deployment](https://www.youtube.com/watch?v=7aRjGIhwyQM)
+
+- [How To Set Up SSH Keys on Rocky Linux 8](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-rocky-linux-8)
