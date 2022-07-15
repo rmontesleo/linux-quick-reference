@@ -26,6 +26,8 @@
 - [jq Manual (development version)](https://stedolan.github.io/jq/manual/)
 
 
+## passwords
+- [How to Reset Root Password on Rocky Linux](https://linuxways.net/red-hat/how-to-reset-root-password-on-rocky-linux/)
 
 
 ## Many topics
