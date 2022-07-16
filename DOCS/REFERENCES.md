@@ -25,6 +25,12 @@
 
 - [jq Manual (development version)](https://stedolan.github.io/jq/manual/)
 
+- [Select objects based on value of variable in object using jq](https://stackoverflow.com/questions/18592173/select-objects-based-on-value-of-variable-in-object-using-jq)
+
+- [jq - a tool for manipulating JSON](https://ravilabio.info/notes/unix/jq.html)
+
+- [jq cheat sheet](https://developer.zendesk.com/documentation/integration-services/developer-guide/jq-cheat-sheet/)
+
 
 ## passwords
 - [How to Reset Root Password on Rocky Linux](https://linuxways.net/red-hat/how-to-reset-root-password-on-rocky-linux/)
